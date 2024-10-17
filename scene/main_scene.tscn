@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://gte3b26bc1d8"]
+
+[ext_resource type="Script" path="res://script/main_scene.gd" id="1_e8aul"]
+[ext_resource type="PackedScene" uid="uid://e1jqrmj8dryi" path="res://level/level1.tscn" id="3_1lw46"]
+[ext_resource type="PackedScene" uid="uid://o00ioirdmj03" path="res://scene/player_spawner.tscn" id="3_nv2ru"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_e8aul")
+
+[node name="PlayerSpawner" parent="." instance=ExtResource("3_nv2ru")]
+position = Vector2(677, 503)
+
+[node name="Camera" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[node name="Level" parent="." instance=ExtResource("3_1lw46")]
+position = Vector2(2.08165e-12, 2.08165e-12)

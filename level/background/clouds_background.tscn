@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://20bkn50gr1o6"]
+
+[ext_resource type="Texture2D" uid="uid://c110trvm63jur" path="res://assets/textures/Background/clouds.png" id="1_b6q5h"]
+
+[node name="CloudsBackground" type="ParallaxBackground"]
+offset = Vector2(500, 2.08165e-12)
+transform = Transform2D(1, 0, 0, 1, 500, 2.08165e-12)
+scroll_offset = Vector2(2.08165e-12, 2.08165e-12)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+motion_scale = Vector2(0.5, 0.5)
+motion_offset = Vector2(2.08165e-12, 2.08165e-12)
+motion_mirroring = Vector2(1920, 2.08165e-12)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(2.08165e-12, 270)
+texture = ExtResource("1_b6q5h")

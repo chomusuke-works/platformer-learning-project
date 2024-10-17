@@ -1,0 +1,222 @@
+[gd_scene load_steps=31 format=3 uid="uid://bwnra76mmix4t"]
+
+[ext_resource type="Script" path="res://script/player.gd" id="1_df5qu"]
+[ext_resource type="Texture2D" uid="uid://b82t6qv0yq7vv" path="res://assets/textures/Main Characters/Ninja Frog/Idle (32x32).png" id="1_gik2k"]
+[ext_resource type="Texture2D" uid="uid://siafg4fg8oee" path="res://assets/textures/Main Characters/Ninja Frog/Run (32x32).png" id="2_5dr1v"]
+[ext_resource type="Texture2D" uid="uid://b4hg0hn3ttg5x" path="res://assets/textures/Main Characters/Ninja Frog/Fall (32x32).png" id="2_vchv1"]
+[ext_resource type="Texture2D" uid="uid://c85nl051bk0yr" path="res://assets/textures/Main Characters/Ninja Frog/Jump (32x32).png" id="4_yd5xr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgt5f"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc6ay"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iyeqy"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvgdc"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1317"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekohl"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wji68"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgkwf"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arawl"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqc3c"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5r5v"]
+atlas = ExtResource("1_gik2k")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14jgd"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sj8t"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1jxbo"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sidy8"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3u0m"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvlhj"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ljeo"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfjy6"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jer5b"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcu1p"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skqmk"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttiqy"]
+atlas = ExtResource("2_5dr1v")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fkywd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vchv1")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgt5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mc6ay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iyeqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uvgdc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1317")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ekohl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wji68")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgkwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arawl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqc3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5r5v")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_yd5xr")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14jgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6sj8t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1jxbo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sidy8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i3u0m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvlhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ljeo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfjy6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jer5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcu1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skqmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttiqy")
+}],
+"loop": true,
+"name": &"run",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkvnr"]
+size = Vector2(13, 21)
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 1
+collision_layer = 2
+script = ExtResource("1_df5qu")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fkywd")
+animation = &"idle"
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 5.5)
+shape = SubResource("RectangleShape2D_vkvnr")
+
+[node name="Label1" type="Label" parent="."]
+offset_top = -49.0
+offset_right = 40.0
+offset_bottom = -26.0
+
+[node name="Label2" type="Label" parent="."]
+offset_top = -23.0
+offset_right = 40.0

@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://dl1kena0qioov"]
+
+[ext_resource type="Texture2D" uid="uid://ffr5u1334apn" path="res://assets/textures/Main Characters/Disappearing (96x96).png" id="1_2pkjp"]
+[ext_resource type="Script" path="res://script/tempAnimation.gd" id="2_s4r7v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eris1"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3xse"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxuok"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4esk7"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehw7l"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uw256"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0w43a"]
+atlas = ExtResource("1_2pkjp")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xkae7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eris1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3xse")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxuok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4esk7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehw7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uw256")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0w43a")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"pop",
+"speed": 15.0
+}]
+
+[node name="PopAnimation" type="AnimatedSprite2D"]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_xkae7")
+animation = &"pop"
+script = ExtResource("2_s4r7v")
